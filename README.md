@@ -1,28 +1,42 @@
 # Competitor Price Monitor
 
-A Python project that scrapes product data from websites, stores results in SQLite, and generates CSV reports.
+A Python-based web scraping project that extracts product pricing data from an e-commerce website, stores the data in SQLite, and generates reports.
+
+## Features
+
+- Web scraping using Requests and BeautifulSoup
+- Store product data in SQLite
+- Query and view stored products
+- Generate CSV reports using Pandas
 
 ## Technologies
 
 - Python
 - Requests
-- BeautifulSoup
-- SQLite
+- BeautifulSoup4
+- SQLite3
 - Pandas
 
-## Features
+## Project Structure
 
-- Scrapes product names and prices
-- Stores data in SQLite database
-- Retrieves data using SQL
-- Generates CSV reports
-- Demonstrates web crawling and reporting
+competitor-price-monitor/
+├── scraper.py
+├── database.py
+├── view_data.py
+├── report.py
+├── requirements.txt
+└── README.md
 
-## Run
+## How to Run
 
-```bash
-pip install -r requirements.txt
 python database.py
 python scraper.py
+python view_data.py
 python report.py
-```
+
+## Example Output
+
+| Product Name         | Price  |
+| -------------------- | ------ |
+| A Light in the Attic | £51.77 |
+| Tipping the Velvet   | £53.74 |
